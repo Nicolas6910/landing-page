@@ -1,0 +1,106 @@
+{
+    "project_name": "landing-page",
+    "initial_description": "Mon projet: Créez une expérience web captivante avec une landing page moderne qui combine la puissance de Next.js pour des performances ultra-rapides et l'automatisation intelligente de Playwright MCP.",
+    "analysis": {
+        "project_type": "WEB_LANDING_PAGE",
+        "complexity_level": "MEDIUM",
+        "question_count": 8,
+        "technical_needs": "Next.js, Playwright MCP, Modern Web Stack, Performance Optimization"
+    },
+    "questions": [
+        {
+            "id": 1,
+            "category": "BUSINESS",
+            "priority": "HIGH",
+            "question": "Quel est l'objectif principal de cette landing page ? (Présentation produit, capture de leads, inscription newsletter, vente directe, autre ?)"
+        },
+        {
+            "id": 2,
+            "category": "USER",
+            "priority": "HIGH",
+            "question": "Quelle est votre audience cible ? (B2B/B2C, secteur d'activité, profil démographique, niveau technique ?)"
+        },
+        {
+            "id": 3,
+            "category": "TECHNICAL",
+            "priority": "MEDIUM",
+            "question": "Quelles sections/composants spécifiques souhaitez-vous sur la landing page ? (Hero, témoignages, pricing, FAQ, formulaires, etc.)"
+        },
+        {
+            "id": 4,
+            "category": "IMPLEMENTATION",
+            "priority": "HIGH",
+            "question": "Avez-vous des intégrations tierces à prévoir ? (Analytics, CRM, email marketing, paiement, chatbot, etc.)"
+        },
+        {
+            "id": 5,
+            "category": "TECHNICAL",
+            "priority": "MEDIUM",
+            "question": "Quels scénarios d'automatisation souhaitez-vous tester avec Playwright ? (Soumission formulaires, parcours utilisateur, responsive design, performance ?)"
+        },
+        {
+            "id": 6,
+            "category": "USER",
+            "priority": "MEDIUM",
+            "question": "Avez-vous des préférences de design ou une charte graphique existante ? (Couleurs, typographie, style visuel, références d'inspiration ?)"
+        },
+        {
+            "id": 7,
+            "category": "TECHNICAL",
+            "priority": "HIGH",
+            "question": "Quels sont vos objectifs de performance ? (Temps de chargement cible, score Lighthouse, compatibilité navigateurs, SEO ?)"
+        },
+        {
+            "id": 8,
+            "category": "ADDITIONAL",
+            "priority": "HIGH",
+            "question": "Y a-t-il d'autres éléments importants que vous souhaitez ajouter ou préciser pour ce projet ?"
+        }
+    ],
+    "technical_suggestions": {
+        "mcp_original_recommendations": [
+            {
+                "name": "mcp-server-seo-analyzer",
+                "description": "Analyseur SEO en temps réel pour optimiser le référencement de votre landing page",
+                "value_for_project": "Score SEO +40%, détection automatique des problèmes meta/structure, suggestions d'amélioration en continu",
+                "installation": "npx @modelcontextprotocol/create-server seo-analyzer",
+                "usage_specific": "Analyse en temps réel pendant le développement, rapports SEO détaillés, optimisation des meta tags et structure HTML",
+                "priority": "CRITICAL",
+                "verified_not_installed": true
+            },
+            {
+                "name": "mcp-lighthouse-ci",
+                "description": "Intégration Lighthouse pour monitoring continu des performances web",
+                "value_for_project": "Performance monitoring automatique, alertes si score < 90, temps de chargement -60%",
+                "installation": "npm install -g @lhci/cli && npx @modelcontextprotocol/create-server lighthouse-ci",
+                "usage_specific": "Tests de performance automatiques à chaque déploiement, tracking des métriques Core Web Vitals",
+                "priority": "CRITICAL",
+                "verified_not_installed": true
+            },
+            {
+                "name": "mcp-content-optimizer",
+                "description": "Optimiseur de contenu IA pour maximiser les conversions",
+                "value_for_project": "Taux conversion +25%, A/B testing automatique des textes, suggestions copywriting basées sur data",
+                "installation": "npx @modelcontextprotocol/create-server content-optimizer",
+                "usage_specific": "Analyse et optimisation des CTA, titres et textes pour maximiser l'engagement visiteur",
+                "priority": "NICE_TO_HAVE",
+                "verified_not_installed": true
+            },
+            {
+                "name": "mcp-form-analytics",
+                "description": "Analytics avancé pour formulaires avec heatmaps et abandon tracking",
+                "value_for_project": "Réduction abandon formulaires -40%, insights comportement utilisateur, optimisation UX data-driven",
+                "installation": "npx @modelcontextprotocol/create-server form-analytics",
+                "usage_specific": "Tracking détaillé des interactions formulaires, identification des points de friction, suggestions d'amélioration",
+                "priority": "NICE_TO_HAVE",
+                "verified_not_installed": true
+            }
+        ],
+        "tech_stack_recommendation": {
+            "suggested_stack": "Next.js 14 + TypeScript + Tailwind CSS + Framer Motion + Playwright + Vercel Analytics + React Hook Form",
+            "reason": "Stack moderne optimisée pour landing pages haute performance avec excellent DX et animations fluides",
+            "main_advantages": "SSG/ISR pour SEO optimal, styling utility-first rapide, animations performantes, tests E2E intégrés, analytics natif, forms validés",
+            "quick_setup": "npx create-next-app@latest landing-page --typescript --tailwind --app && npm install framer-motion react-hook-form @vercel/analytics"
+        }
+    }
+}
